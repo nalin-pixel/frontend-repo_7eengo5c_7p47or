@@ -1,6 +1,5 @@
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { useEffect, useRef } from 'react'
-import { Package, Truck, Mailbox, Printer, Fax, Scan, PenLine, Brush, Shirt, PanelTop, CreditCard, Box } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { Package, Truck, Inbox, Printer, FileText, Scan, PenTool, Brush, ShoppingBag, Image, CreditCard, Box } from 'lucide-react'
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -36,14 +35,14 @@ export default function Services() {
   const services = [
     { icon: Truck, title: 'Shipping Services', bullets: ['USPS, UPS, DHL (No FedEx yet)', 'Domestic & international shipping', 'Label printing and drop-off'] },
     { icon: Package, title: 'Package Tracking', bullets: ['Quick links to USPS, UPS, DHL tracking', 'Clean input with Track button', 'Real-time guidance'] },
-    { icon: Mailbox, title: 'Mailbox Rental', bullets: ['Real street address', 'Email & text notifications', '24/7 access'] },
+    { icon: Inbox, title: 'Mailbox Rental', bullets: ['Real street address', 'Email & text notifications', '24/7 access'] },
     { icon: Printer, title: 'Printing & Copies', bullets: ['Flyers, business cards, forms', 'Color and B&W options', 'Fast turnaround'] },
-    { icon: Fax, title: 'Faxing & Shredding', bullets: ['Send & receive faxes', 'Secure document shredding'] },
+    { icon: FileText, title: 'Faxing & Shredding', bullets: ['Send & receive faxes', 'Secure document shredding'] },
     { icon: Scan, title: 'Document Scanning', bullets: ['Email, USB, or PDF output', 'Bulk or single-scan options'] },
-    { icon: PenLine, title: 'Notary Services', bullets: ['Walk-in or appointment', 'Personal & business documents'] },
+    { icon: PenTool, title: 'Notary Services', bullets: ['Walk-in or appointment', 'Personal & business documents'] },
     { icon: Brush, title: 'Graphic Design', bullets: ['Business cards, flyers, menus', 'Logo & brand development'] },
-    { icon: Shirt, title: 'Custom Apparel (DTF)', bullets: ['Custom shirts for teams & staff', 'Retail-ready prints'] },
-    { icon: PanelTop, title: 'Posters & Banners', bullets: ['Grand openings', 'Storefront signage', 'Event prints'] },
+    { icon: ShoppingBag, title: 'Custom Apparel (DTF)', bullets: ['Custom shirts for teams & staff', 'Retail-ready prints'] },
+    { icon: Image, title: 'Posters & Banners', bullets: ['Grand openings', 'Storefront signage', 'Event prints'] },
     { icon: CreditCard, title: 'Credit Card Machines', bullets: ['Clover POS setup & sales', 'On-site business support', 'Payment processing systems'] },
     { icon: Box, title: 'Packaging & Supplies', bullets: ['Boxes, envelopes, tape', 'Bubble wrap, packing peanuts'] },
   ]
